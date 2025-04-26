@@ -30,7 +30,6 @@ export default function Dashboard() {
       Authorization: `Bearer ${localStorage.getItem("token")}`,
     },
   });
-
   const fetchNotifications = async () => {
     if (!user || !user.id) return;
     try {
